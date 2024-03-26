@@ -1,0 +1,13 @@
+1: calculate total monlthy paymnet - Done
+2: display total monthly payment
+3: calculate interest amount paid = Done
+4: display interest amount paid
+5: calculate principle amount paid - done
+6: displaay interest amount paid
+7: calcualte # of payments over the laons lifetime - done
+
+7: prompt user for loan amount
+8: prompt user for length of laon in months
+9: prompt user for loans interest rate
+
+10: calculate monthly schedule -done
