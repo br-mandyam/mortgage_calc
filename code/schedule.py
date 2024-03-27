@@ -17,14 +17,11 @@ class Schedule:
                 total_paid += monthly_payment
             else:
                 principal, monthly_payment, balance = balance, balance + interest, 0
-            yield number, monthly_payment, interest, principal, balance, total_interest, total_paid # I do not want to yield I want to add to a Pandas Dataframe\
+            yield number, monthly_payment, interest, principal, balance, total_interest, total_paid
         
     def __init__(self, P, r, n): #
         schedule_list = list(self.create_schedule(P,r,n))
         self.schedule = pd.DataFrame(schedule_list, columns=['Month', 'Payment', 'Interest Payment', 'Principal Payment','Balance', 'Total Interest', 'Total Paid'])
-
+    
     def print(self):
         print(self.schedule.to_string())
-
-sched:Schedule = Schedule(100000, .05, 60)
-sched.print()
